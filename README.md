@@ -5,33 +5,25 @@ API REST que faz operações CRUD (Create, Read, Update, Delete) sobre usuários
 
 https://github.com/user-attachments/assets/98e8417e-b5ed-432e-8917-8ff469948cbe
 
-**# User Management API**
-
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.0-brightgreen) ![Java](https://img.shields.io/badge/Java-17-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14.0-blue)
-
-Uma API RESTful simples para criar, ler, atualizar e deletar usuários, construída com Java e Spring Boot.
-
----
-
-## 🚀 Visão Geral
-
-Este projeto implementa uma arquitetura em camadas, utilizando os conceitos de **Controller**, **Service** e **Repository**. A comunicação é feita através de requisições HTTP, seguindo as convenções REST.
-
----
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.0-brightgreen) ![Java](https://img.shields.io/badge/Java-24-blue) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14.0-blue)
 
 ## ✨ Principais Funcionalidades
 
 * **Arquitetura em camadas bem definida**
 
-  * Separação clara entre **Controller**, **Service** e **Repository**, promovendo alta coesão e baixo acoplamento.
+  * Separação clara entre **Controller**, **Service** e **Repository**, promovendo alta coesão e baixo acoplamento. <br />
+   ![image](https://github.com/user-attachments/assets/541c518e-7c93-4f50-98cc-3396534ada74)
+
 
 * **Uso de DTOs como registros (Java `record`)**
 
-  * `CreateUserDTO` e `UpdateUserDTO` deixam explícita a estrutura de entrada, facilitando manutenção, validação e documentação automática.
+  * `CreateUserDTO` e `UpdateUserDTO` deixam explícita a estrutura de entrada, facilitando manutenção, validação e documentação automática.<br />
+    ![image](https://github.com/user-attachments/assets/61727a51-2c41-40af-9632-6181229a6ac3)
+
 
 * **Injeção de dependências via construtor**
 
-  * Tornando o código mais desacoplado e facilitando a **testabilidade** (sem uso de `@Autowired` diretamente nos campos).
+  * Tornando o código mais desacoplado e facilitando a **testabilidade** (sem uso de `@Autowired` diretamente nos campos).<br />
 
 * **API RESTful seguindo convenções HTTP**
 
@@ -73,8 +65,8 @@ Este projeto implementa uma arquitetura em camadas, utilizando os conceitos de *
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Java 17**
-* **Spring Boot 2.7.0**
+* **Java 24**
+* **Spring Boot 3.5.0**
 * **Spring Web (Spring MVC)**
 * **Spring Data JPA**
 * **PostgreSQL 14**
