@@ -1,16 +1,13 @@
 package com.example.demo.services;
 
-import com.example.demo.controllers.CreateUserDTO;
-import com.example.demo.controllers.UpdateUserDTO;
-import com.example.demo.model.User;
+import com.example.demo.dto.CreateUserDTO;
+import com.example.demo.dto.UpdateUserDTO;
+import com.example.demo.entity.User;
 import com.example.demo.repositorys.UserRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class UserService {

@@ -1,6 +1,8 @@
 package com.example.demo.controllers;
 
-import com.example.demo.model.User;
+import com.example.demo.dto.CreateUserDTO;
+import com.example.demo.dto.UpdateUserDTO;
+import com.example.demo.entity.User;
 import com.example.demo.repositorys.UserRepository;
 import com.example.demo.services.UserService;
 import org.springframework.http.ResponseEntity;

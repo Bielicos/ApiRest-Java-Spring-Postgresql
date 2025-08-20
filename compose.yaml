@@ -1,0 +1,24 @@
+services:
+  public-api:
+    container_name: public-api
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - public_network
+
+  postgresql:
+    container_name: postgresql
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user123
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: db123
+    networks:
+      - public_network
+
+networks:
+  public_network:
+    driver: bridge
